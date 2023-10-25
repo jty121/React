@@ -5,8 +5,7 @@ import Showcase from './showcase/showcase'
 
 const header = () => {
   return (
-    <header>
-            
+    <header> 
         <Navsection />
         <Showcase />
     </header>
