@@ -1,0 +1,7 @@
+.logotype {
+    padding-top: 7.5rem;
+  }
+  .logotype .container {
+    display: flex;
+    justify-content: space-between;
+  }
