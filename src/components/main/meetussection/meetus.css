@@ -1,0 +1,48 @@
+.meet-us {
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+    background-color: #F0D082;
+  }
+  .meet-us .container .content .browse-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .meet-us .container .content .browse-team .btn-browse {
+    border: 1px solid #191919;
+    border-radius: 25px;
+  }
+  .meet-us .container .content .members {
+    flex: 1;
+  }
+  @media (min-width: 776px) {
+    .meet-us .container .content .members {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  @media (min-width: 992px) {
+    .meet-us .container .content .members {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .meet-us .container .content .members .info-box h4 {
+    margin-top: 30px;
+  }
+  .meet-us .container .content .members .info-box p {
+    font-weight: 500;
+  }
+  .meet-us .container .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    border-bottom: 2px solid rgba(25, 25, 25, 0.1);
+    padding-bottom: 5rem;
+  }
+  
