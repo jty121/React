@@ -1,0 +1,57 @@
+.project-and-case {
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+  }
+  .project-and-case .container .style-h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .project-and-case .container .project-cases {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  @media (min-width: 992px) {
+    .project-and-case .container .project-cases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  .project-and-case .container .project-cases article img {
+    width: auto;
+    height: auto;
+  }
+  .project-and-case .container .project-cases article h4 {
+    padding-top: 30px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #DAD9D3;
+  }
+  .project-and-case .container .project-cases article .button-read {
+    text-align: right;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
+  .project-and-case .container .project-cases article .button-read a {
+    padding: 15px;
+    margin-right: 16px;
+    text-decoration: none;
+    color: #191919;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .project-and-case .container .project-cases article .button-read a:hover {
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+  }
+  .project-and-case .container .project-cases article .button-read a i {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+  .project-and-case .container .btn-recent-projects {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
