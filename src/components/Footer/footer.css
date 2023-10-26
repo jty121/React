@@ -1,0 +1,69 @@
+.crito-footer {
+    padding-top: 7.5rem;
+    padding-bottom: 1.8rem;
+    background-color: #191919;
+    color: #f8f8f8;
+    position: relative;
+  }
+  .crito-footer .wavy-lines-right {
+    position: absolute;
+    right: 0;
+    bottom: 6.7rem;
+  }
+  .crito-footer .container .content {
+    padding-bottom: 5rem;
+  }
+  .crito-footer .container .content .footer-boxes {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 5rem;
+  }
+  @media (min-width: 992px) {
+    .crito-footer .container .content .footer-boxes {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      gap: 5rem;
+    }
+  }
+  .crito-footer .container .content .footer-boxes .box-logotype img {
+    margin-bottom: 1.2rem;
+  }
+  .crito-footer .container .content .footer-boxes .box-logotype p {
+    color: #707070;
+  }
+  .crito-footer .container .content .footer-boxes .box {
+    padding-top: 1.2rem;
+    font-size: 500;
+    justify-content: space-between;
+  }
+  .crito-footer .container .content .footer-boxes .box h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+  }
+  .crito-footer .container .content .footer-boxes .box p {
+    color: #707070;
+  }
+  .crito-footer .copyrights-socialmedia {
+    border-top: 2px solid #707070;
+    padding-top: 3.1rem;
+    padding-bottom: 0;
+  }
+  .crito-footer .copyrights-socialmedia .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .crito-footer .copyrights-socialmedia .container .copyrights {
+    color: #707070;
+  }
+  .crito-footer .copyrights-socialmedia .container .social-media a {
+    color: white;
+    margin: 8px;
+    font-size: 18px;
+  }
+  .crito-footer .copyrights-socialmedia .container .social-media a:hover {
+    color: #8d8d8d;
+    border-bottom: 3px solid #ffffff;
+    transition: ease-in-out 0.2s;
+  }
