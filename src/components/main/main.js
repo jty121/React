@@ -9,6 +9,8 @@ import ProjectSection from './projectsection/project'
 import MeetusSection from './meetussection/meetus'
 import TestimonialSection from './testimonialsection/testimonial'
 import ArticlesSection from './articlessection/articles'
+import SignupSection from './signupsection/signup'
+
 
 const main = () => {
   return (
@@ -22,6 +24,7 @@ const main = () => {
         <MeetusSection />
         <TestimonialSection />
         <ArticlesSection />
+        <SignupSection />
     </main>
   )
 }
