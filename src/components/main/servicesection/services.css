@@ -1,0 +1,195 @@
+.our-services {
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+    background-color: #F0EFE9;
+    position: relative;
+  }
+  .our-services .wavy-lines-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .our-services .container .style-h2 {
+    margin-bottom: 50px;
+  }
+  .our-services .container .service-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+  @media (min-width: 776px) {
+    .our-services .container .service-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      -moz-column-gap: 30px;
+           column-gap: 30px;
+    }
+  }
+  @media (min-width: 992px) {
+    .our-services .container .service-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      -moz-column-gap: 30px;
+           column-gap: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .our-services .container .service-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      -moz-column-gap: 30px;
+           column-gap: 30px;
+    }
+  }
+  .our-services .container .service-boxes .business-box {
+    background-color: #f8f8f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    position: relative;
+  }
+  .our-services .container .service-boxes .business-box.active::after {
+    content: "";
+    position: absolute;
+    font-weight: 500;
+    height: 2px;
+    width: 40px;
+    background-color: #191919;
+    left: 30px;
+    top: 40px;
+  }
+  .our-services .container .service-boxes .business-box h4 {
+    margin-top: 50px;
+  }
+  .our-services .container .service-boxes .business-box p {
+    margin-bottom: 3rem;
+  }
+  .our-services .container .service-boxes .business-box .arrow {
+    text-align: right;
+  }
+  .our-services .container .service-boxes .business-box .arrow a {
+    color: #191919;
+  }
+  .our-services .container .service-boxes .business-box .arrow a:hover {
+    color: #F9D783;
+    transition: 0.2s ease-in-out;
+  }
+  .our-services .container .service-boxes .business-box .arrow a i {
+    font-size: 2.5em;
+  }
+  .our-services .container .service-boxes .startup-box {
+    background-color: #F9D783;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    position: relative;
+  }
+  .our-services .container .service-boxes .startup-box.active::after {
+    content: "";
+    position: absolute;
+    font-weight: 500;
+    height: 2px;
+    width: 40px;
+    background-color: #191919;
+    left: 30px;
+    top: 40px;
+  }
+  .our-services .container .service-boxes .startup-box h4 {
+    margin-top: 50px;
+  }
+  .our-services .container .service-boxes .startup-box p {
+    margin-bottom: 3rem;
+  }
+  .our-services .container .service-boxes .startup-box .arrow {
+    text-align: right;
+  }
+  .our-services .container .service-boxes .startup-box .arrow a {
+    color: #ffffff;
+  }
+  .our-services .container .service-boxes .startup-box .arrow a:hover {
+    color: #191919;
+    transition: 0.2s ease-in-out;
+  }
+  .our-services .container .service-boxes .startup-box .arrow a i {
+    font-size: 2.5em;
+  }
+  .our-services .container .service-boxes .financial-box {
+    background-color: #f8f8f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    position: relative;
+  }
+  .our-services .container .service-boxes .financial-box.active::after {
+    content: "";
+    position: absolute;
+    font-weight: 500;
+    height: 2px;
+    width: 40px;
+    background-color: #191919;
+    left: 30px;
+    top: 40px;
+  }
+  .our-services .container .service-boxes .financial-box h4 {
+    margin-top: 50px;
+  }
+  .our-services .container .service-boxes .financial-box p {
+    margin-bottom: 3rem;
+  }
+  .our-services .container .service-boxes .financial-box .arrow {
+    text-align: right;
+  }
+  .our-services .container .service-boxes .financial-box .arrow a {
+    color: #191919;
+  }
+  .our-services .container .service-boxes .financial-box .arrow a:hover {
+    color: #F9D783;
+    transition: 0.2s ease-in-out;
+  }
+  .our-services .container .service-boxes .financial-box .arrow a i {
+    font-size: 2.5em;
+  }
+  .our-services .container .service-boxes .risk-box {
+    background-color: #f8f8f8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    position: relative;
+  }
+  .our-services .container .service-boxes .risk-box.active::after {
+    content: "";
+    position: absolute;
+    font-weight: 500;
+    height: 2px;
+    width: 40px;
+    background-color: #191919;
+    left: 30px;
+    top: 40px;
+  }
+  .our-services .container .service-boxes .risk-box h4 {
+    margin-top: 50px;
+  }
+  .our-services .container .service-boxes .risk-box p {
+    margin-bottom: 3rem;
+  }
+  .our-services .container .service-boxes .risk-box .arrow {
+    text-align: right;
+  }
+  .our-services .container .service-boxes .risk-box .arrow a {
+    color: #191919;
+  }
+  .our-services .container .service-boxes .risk-box .arrow a:hover {
+    color: #F9D783;
+    transition: 0.2s ease-in-out;
+  }
+  .our-services .container .service-boxes .risk-box .arrow a i {
+    font-size: 2.5em;
+  }
+  .our-services .btn-browse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-services .btn-browse a {
+    margin-top: 50px;
+  }
