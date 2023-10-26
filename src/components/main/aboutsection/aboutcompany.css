@@ -1,0 +1,91 @@
+.about-company {
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+  }
+  .about-company .container .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "style-h2" "text-box" "text-box" "buttons";
+    position: relative;
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "box-left style-h2" "box-left text-box" "box-left text-box" "box-left buttons";
+    }
+  }
+  .about-company .container .content .box-left {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .box-left {
+      display: grid;
+      grid-area: box-left;
+      width: 100%;
+    }
+  }
+  .about-company .container .content .style-h2 {
+    grid-area: style-h2;
+    padding: 0 4rem;
+  }
+  .about-company .container .content .text-box {
+    grid-area: text-box;
+    padding: 0 4rem;
+  }
+  .about-company .container .content .buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 4rem;
+  }
+  .about-company .container .content .buttons .btn-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-company .container .content .buttons .btn-video i {
+    font-size: 45px;
+    font-weight: 100;
+    margin-right: 16px;
+  }
+  .about-company .container .content .buttons .btn-video i:hover {
+    font-weight: 700;
+    color: #c2c1be;
+    transition: 0.2s ease-in-out;
+  }
+  .about-company .container .content .founder {
+    display: none;
+    background-color: #BEEBFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 368px;
+    height: 180px;
+    padding: 40px 20px;
+    position: absolute;
+    left: -55px;
+    bottom: 40px;
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .founder {
+      display: block;
+    }
+  }
+  .about-company .container .content .founder .box-blue {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .about-company .container .content .founder .box-blue h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .about-company .container .content .founder .box-blue p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F94D1C;
+    margin: 0 0 6px;
+  }
