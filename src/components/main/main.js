@@ -8,7 +8,7 @@ import ChoooseUsSection from './chooseussection/chooseus'
 import ProjectSection from './projectsection/project'
 import MeetusSection from './meetussection/meetus'
 import TestimonialSection from './testimonialsection/testimonial'
-
+import ArticlesSection from './articlessection/articles'
 
 const main = () => {
   return (
@@ -21,6 +21,7 @@ const main = () => {
         <ProjectSection />
         <MeetusSection />
         <TestimonialSection />
+        <ArticlesSection />
     </main>
   )
 }
