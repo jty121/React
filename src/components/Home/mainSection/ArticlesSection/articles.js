@@ -1,10 +1,10 @@
 import './articles.css'
 import React from 'react'
 
-import img_classroom from '../../../assets/images/classroomimg.png'
-import img_implement from '../../../assets/images/implementimg.png'
-import img_cssdesign from '../../../assets/images/cssdesignimg.png'
-import img_dots from '../../../assets/images/dot.png'
+import img_classroom from '../../../../assets/images/classroomimg.png'
+import img_implement from '../../../../assets/images/implementimg.png'
+import img_cssdesign from '../../../../assets/images/cssdesignimg.png'
+import img_dots from '../../../../assets/images/dot.png'
 
 const articles = () => {
   return (

@@ -1,7 +1,7 @@
 import './services.css'
 import React from 'react'
 
-import img_wavylines from '../../../assets/images/background-lines-right.svg'
+import img_wavylines from '../../../../assets/images/background-lines-right.svg'
 
 const services = () => {
   return (

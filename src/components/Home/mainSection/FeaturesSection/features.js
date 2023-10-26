@@ -1,10 +1,10 @@
 import './features.css'
 import React from 'react'
 
-import img_handshake from '../../../assets/images/handshakeicon.png'
-import img_bulb from '../../../assets/images/bulbicon.png'
-import img_financial from '../../../assets/images/financialicon.png'
-import img_boxicon from '../../../assets/images/boxicon.png'
+import img_handshake from '../../../../assets/images/handshakeicon.png'
+import img_bulb from '../../../../assets/images/bulbicon.png'
+import img_financial from '../../../../assets/images/financialicon.png'
+import img_boxicon from '../../../../assets/images/boxicon.png'
 
 const features = () => {
   return (

@@ -1,11 +1,11 @@
 import './chooseus.css'
 import React from 'react'
 
-import img_thumbs from '../../../assets/images/thumbsupicon.svg'
-import img_hexagon from '../../../assets/images/hexagonicon.svg'
-import img_experience from '../../../assets/images/experienceicon.svg'
-import img_artificial from '../../../assets/images/ai-icon.svg'
-import img_chooseus from '../../../assets/images/chooseusimage.jpg'
+import img_thumbs from '../../../../assets/images/thumbsupicon.svg'
+import img_hexagon from '../../../../assets/images/hexagonicon.svg'
+import img_experience from '../../../../assets/images/experienceicon.svg'
+import img_artificial from '../../../../assets/images/ai-icon.svg'
+import img_chooseus from '../../../../assets/images/chooseusimage.jpg'
 
 const chooseus = () => {
   return (

@@ -1,7 +1,7 @@
 import './header.css'
 import React from 'react'
-import Navsection from './navsection/navsection'
-import Showcase from './showcase/showcase'
+import Navsection from './NavSection/navsection'
+import Showcase from './ShowcaseSection/showcase'
 
 const header = () => {
   return (
