@@ -4,7 +4,7 @@ import LogotypeSection from './logotypesection/logotype'
 import FeaturesSection from './featuresSection/features'
 import AboutSection from './aboutsection/aboutcompany'
 import ServiceSection from './servicesection/services'
-
+import ChoooseUsSection from './chooseussection/chooseus'
 
 const main = () => {
   return (
@@ -13,6 +13,7 @@ const main = () => {
         <FeaturesSection />
         <AboutSection />
         <ServiceSection />
+        <ChoooseUsSection />
     </main>
   )
 }

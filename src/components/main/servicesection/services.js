@@ -7,7 +7,7 @@ const services = () => {
         <img className="wavy-lines-right" src="images/background-lines-right.svg" alt="white lines to the right" />
         <div className="container">
             <div className="style-h2">
-                <p>Our Services</p>
+                <p>Our Services </p>
                 <h2>We Provide The Best Service For Consulting</h2>
             </div>
             <div className="service-boxes">
