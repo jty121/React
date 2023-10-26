@@ -1,6 +1,8 @@
 import './aboutcompany.css'
 import React from 'react'
 
+import img_aboutcompany from '../../../assets/images/aboutcompany.png'
+
 const aboutcompany = () => {
   return (
         <section className="about-company">
@@ -16,7 +18,7 @@ const aboutcompany = () => {
                         </div>
                     </div>
                     <div className="box-left">
-                        <img src="images/aboutcompany.png" alt="picture of a woman walking and holding a laptop" />
+                        <img src={img_aboutcompany} alt="picture of a woman walking and holding a laptop" />
                     </div>
                     <div className="style-h2">
                         <p>About Company</p>

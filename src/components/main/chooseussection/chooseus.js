@@ -1,6 +1,12 @@
 import './chooseus.css'
 import React from 'react'
 
+import img_thumbs from '../../../assets/images/thumbsupicon.svg'
+import img_hexagon from '../../../assets/images/hexagonicon.svg'
+import img_experience from '../../../assets/images/experienceicon.svg'
+import img_artificial from '../../../assets/images/ai-icon.svg'
+import img_chooseus from '../../../assets/images/chooseusimage.jpg'
+
 const chooseus = () => {
   return (
     <section className="choose-us">
@@ -13,7 +19,7 @@ const chooseus = () => {
             </div>
             <div className="info-box">
                 <div>
-                    <img src="images/thumbsupicon.svg" alt="thumbs up icon" />
+                    <img src={img_thumbs} alt="thumbs up icon" />
                 </div>
                <div> 
                     <h4>Process Excellence</h4>
@@ -22,7 +28,7 @@ const chooseus = () => {
             </div>
             <div className="info-box">
                 <div className="icons">
-                    <img src="images/hexagonicon.svg" alt="hexagon icon" />
+                    <img src={img_hexagon} alt="hexagon icon" />
                 </div>
                <div> 
                     <h4>Strategic Planning</h4>
@@ -31,7 +37,7 @@ const chooseus = () => {
             </div>
             <div className="info-box">
                 <div className="icons">
-                    <img src="images/experienceicon.svg" alt="design icon" />
+                    <img src={img_experience} alt="design icon" />
                 </div>
                <div> 
                     <h4>Experience Design</h4>
@@ -40,7 +46,7 @@ const chooseus = () => {
             </div>
             <div className="info-box">
                 <div className="icons">
-                    <img src="images/ai-icon.svg" alt="artificial inteligence icon" />
+                    <img src={img_artificial} alt="artificial inteligence icon" />
                 </div>
                <div> 
                     <h4>Artificial Inteligence</h4>
@@ -49,7 +55,7 @@ const chooseus = () => {
             </div>
         </div>
         <div className="right-column">
-            <img src="images/chooseusimage.jpg" alt="Picture of two women looking at eachother, one is holding a tablet" />
+            <img src={img_chooseus} alt="Picture of two women looking at eachother, one is holding a tablet" />
         </div>
     </div>
 </section>

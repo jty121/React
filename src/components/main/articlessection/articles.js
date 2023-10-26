@@ -1,6 +1,11 @@
 import './articles.css'
 import React from 'react'
 
+import img_classroom from '../../../assets/images/classroomimg.png'
+import img_implement from '../../../assets/images/implementimg.png'
+import img_cssdesign from '../../../assets/images/cssdesignimg.png'
+import img_dots from '../../../assets/images/dot.png'
+
 const articles = () => {
   return (
     <section className="articles-news">
@@ -14,7 +19,7 @@ const articles = () => {
             <div className="articles">
                 <article>
                         <div className="box-img">
-                            <img src="images/classroomimg.png" alt="picture of a woman in a classroom" />
+                            <img src={img_classroom} alt="picture of a woman in a classroom" />
                             <div className="box-color">
                                 <span>25</span>
                                 <p>Mar</p>    
@@ -29,7 +34,7 @@ const articles = () => {
                 </article>
                 <article>
                         <div className="box-img">
-                            <img src="images/implementimg.png" alt="picture of text on a computerscreen" />
+                            <img src={img_implement} alt="picture of text on a computerscreen" />
                             <div className="box-color">
                                 <span>17</span>
                                 <p>Mar</p>    
@@ -44,7 +49,7 @@ const articles = () => {
                 </article>
                 <article>
                         <div className="box-img">
-                            <img src="images/cssdesignimg.png" alt="picture of a mobile phone and two books on a table" />
+                            <img src={img_cssdesign} alt="picture of a mobile phone and two books on a table" />
                             <div className="box-color">
                                 <span>13</span>
                                 <p>Mar</p>    
@@ -59,7 +64,7 @@ const articles = () => {
                 </article>
             </div>
             <div className="dots">
-                <img src="images/dotstestimonial.png" alt="dots" />
+                <img src={img_dots} alt="dots" />
             </div>
         </div>
     </section>

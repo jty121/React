@@ -12,7 +12,7 @@ import ArticlesSection from './articlessection/articles'
 import SignupSection from './signupsection/signup'
 
 
-const main = () => {
+const Main = () => {
   return (
     <main>
         <LogotypeSection />
@@ -29,4 +29,4 @@ const main = () => {
   )
 }
 
-export default main
+export default Main

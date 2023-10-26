@@ -1,10 +1,12 @@
 import './services.css'
 import React from 'react'
 
+import img_wavylines from '../../../assets/images/background-lines-right.svg'
+
 const services = () => {
   return (
     <section className="our-services">
-        <img className="wavy-lines-right" src="images/background-lines-right.svg" alt="white lines to the right" />
+        <img className="wavy-lines-right" src={img_wavylines} alt="white lines to the right" />
         <div className="container">
             <div className="style-h2">
                 <p>Our Services </p>

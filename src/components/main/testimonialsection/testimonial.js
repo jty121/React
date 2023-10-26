@@ -1,6 +1,11 @@
 import './testimonial.css'
 import React from 'react'
 
+import img_star from '../../../assets/images/Star.png'
+import img_cassandra from '../../../assets/images/cassandra.png'
+import img_amanda from '../../../assets/images/amanda.png'
+import img_jack from '../../../assets/images/jack.png'
+
 const testimonial = () => {
   return (
     <section className="testimonial">
@@ -11,11 +16,11 @@ const testimonial = () => {
             </div>
             <div className="reviews">
                 <div className="box-content">
-                    <img src="images/Star.png" alt="review stars" />
+                    <img src={img_star} alt="review stars" />
                     <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                     <div className="client">
                         <div>
-                            <img src="images/cassandra.png" alt="photo of review client Cassandra Warren" />
+                            <img src={img_cassandra} alt="photo of review client Cassandra Warren" />
                         </div>
                         <div className="style-h4">
                             <h4>Cassandra Warren</h4>
@@ -24,11 +29,11 @@ const testimonial = () => {
                     </div>
                 </div>
                 <div className="box-content">
-                    <img src="images/Star.png" alt="review stars" />
+                    <img src={img_star} alt="review stars" />
                     <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                     <div className="client">
                         <div>
-                            <img src="images/amanda.png" alt="photo of review client Amanda Tulling" />
+                            <img src={img_amanda} alt="photo of review client Amanda Tulling" />
                         </div>
                         <div className="style-h4">
                             <h4>Amanda Tulling</h4>
@@ -37,11 +42,11 @@ const testimonial = () => {
                     </div>
                 </div>
                 <div className="box-content">
-                    <img src="images/Star.png" alt="review stars" />
+                    <img src={img_star} alt="review stars" />
                     <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
                     <div className="client">
                         <div>
-                            <img src="images/jack.png" alt="photo of review client Jack McDougglas" />
+                            <img src={img_jack} alt="photo of review client Jack McDougglas" />
                         </div>
                         <div className="style-h4">
                             <h4>Jack McDogglas</h4>

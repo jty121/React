@@ -1,6 +1,12 @@
 import './meetus.css'
 import React from 'react'
 
+import img_palmer from '../../../assets/images/kristinepalmer.jpg'
+import img_aubri from '../../../assets/images/markaubri.jpg'
+import img_hansen from '../../../assets/images/kimberlyhansen.jpg'
+import img_willoman from '../../../assets/images/justinwilloman.jpg'
+import img_dots from '../../../assets/images/dot.png'
+
 const meetus = () => {
   return (
     <section className="meet-us">
@@ -17,28 +23,28 @@ const meetus = () => {
                 </div>
                 <div className="members">
                     <div className="info-box">
-                        <img src="images/kristinepalmer.jpg" alt="photo of Krisitne Palmer, chef operation officer" />
+                        <img src={img_palmer} alt="photo of Krisitne Palmer, chef operation officer" />
                         <div className="style-h4">
                             <h4>Kristine Palmer</h4>
                         </div>
                         <p>Chef Operation Officer</p>
                     </div>
                     <div className="info-box">
-                        <img src="images/markaubri.jpg" alt="photo of Mark Aubri, senior consultant" />
+                        <img src={img_aubri} alt="photo of Mark Aubri, senior consultant" />
                         <div className="style-h4">
                             <h4>Mark Aubri</h4>
                         </div>
                         <p>Senior Consultant</p>
                     </div>
                     <div className="info-box">
-                        <img src="images/kimberlyhansen.jpg" alt="photo of Kimberly Hansen, senior consultant" />
+                        <img src={img_hansen} alt="photo of Kimberly Hansen, senior consultant" />
                         <div className="style-h4">
                             <h4>Kimberly Hansen</h4>
                         </div>
                         <p>Senior Consultant</p>
                     </div>
                     <div className="info-box">
-                        <img src="images/justinwilloman.jpg" alt="photot of Justin Willoman, senior tech consultant" />
+                        <img src={img_willoman} alt="photot of Justin Willoman, senior tech consultant" />
                             <div className="style-h4">
                         <h4>Justin Willoman</h4>
                         </div>
@@ -47,7 +53,7 @@ const meetus = () => {
                 </div>
             </div>
             <div className="dots">
-                <img src="images/dot.png" alt="dots" />
+                <img src={img_dots} alt="dots" />
             </div>
         </div>
     </section>
