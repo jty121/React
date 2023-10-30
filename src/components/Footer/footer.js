@@ -1,15 +1,18 @@
 import './footer.css'
 import React from 'react'
 
+import img_wavyLines from '../../assets/images/background-lines-right.svg'
+import img_logoFooter from '../../assets/images/Logofooter.svg'
+
 const Footer = () => {
   return (
     <footer className="crito-footer">
-    <img className="wavy-lines-right" src="images/background-lines-white-right.svg" alt="wavy lines to the right" />
+    <img className="wavy-lines-right" src={img_wavyLines} alt="wavy lines to the right" />
     <div className="container">
         <div className="content">  
             <div className="footer-boxes">
                 <div className="box-logotype">
-                    <img src="images/Logofooter.svg" alt="Crito logotype" />
+                    <img src={img_logoFooter} alt="Crito logotype" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
                 </div>  
                 <div className="box">

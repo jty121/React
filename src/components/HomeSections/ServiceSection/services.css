@@ -45,13 +45,13 @@
            column-gap: 30px;
     }
   }
-  .our-services .container .service-boxes .business-box {
+  .our-services .container .service-boxes .box {
     background-color: #f8f8f8;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 30px;
     position: relative;
   }
-  .our-services .container .service-boxes .business-box.active::after {
+  .our-services .container .service-boxes .service-box.active::after {
     content: "";
     position: absolute;
     font-weight: 500;
@@ -61,23 +61,23 @@
     left: 30px;
     top: 40px;
   }
-  .our-services .container .service-boxes .business-box h4 {
+  .our-services .container .service-boxes .box h4 {
     margin-top: 50px;
   }
-  .our-services .container .service-boxes .business-box p {
+  .our-services .container .service-boxes .box p {
     margin-bottom: 3rem;
   }
-  .our-services .container .service-boxes .business-box .arrow {
+  .our-services .container .service-boxes .box .arrow {
     text-align: right;
   }
-  .our-services .container .service-boxes .business-box .arrow a {
+  .our-services .container .service-boxes .box .arrow a {
     color: #191919;
   }
-  .our-services .container .service-boxes .business-box .arrow a:hover {
+  .our-services .container .service-boxes .box .arrow a:hover {
     color: #F9D783;
     transition: 0.2s ease-in-out;
   }
-  .our-services .container .service-boxes .business-box .arrow a i {
+  .our-services .container .service-boxes .box .arrow a i {
     font-size: 2.5em;
   }
   .our-services .container .service-boxes .startup-box {
@@ -115,7 +115,7 @@
   .our-services .container .service-boxes .startup-box .arrow a i {
     font-size: 2.5em;
   }
-  .our-services .container .service-boxes .financial-box {
+  /* .our-services .container .service-boxes .financial-box {
     background-color: #f8f8f8;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 30px;
@@ -184,7 +184,7 @@
   }
   .our-services .container .service-boxes .risk-box .arrow a i {
     font-size: 2.5em;
-  }
+  } */
   .our-services .btn-browse {
     display: flex;
     justify-content: center;

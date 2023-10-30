@@ -1,10 +1,10 @@
 import './project.css'
 import React from 'react'
 
-import img_business from '../../../../assets/images/growbusiness.png'
-import img_responsive from '../../../../assets/images/responsivewebsite.png'
-import img_educate from '../../../../assets/images/educateemployeers.png'
-import img_businessinsight from '../../../../assets/images/businessinsigghts.png'
+import img_business from '../../../assets/images/growbusiness.png'
+import img_responsive from '../../../assets/images/responsivewebsite.png'
+import img_educate from '../../../assets/images/educateemployeers.png'
+import img_businessinsight from '../../../assets/images/businessinsigghts.png'
 
 const project = () => {
   return (

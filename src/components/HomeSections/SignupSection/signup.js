@@ -1,7 +1,7 @@
 import './signup.css'
 import React from 'react'
 
-import img_wavylines from '../../../../assets/images/background-lines-right.svg'
+import img_wavylines from '../../../assets/images/background-lines-right.svg'
 
 const signup = () => {
   return (

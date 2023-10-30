@@ -1,16 +1,20 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/header';
-import Main from './components/Home/mainSection/main';
-import Footer from './components/Footer/footer';
 
-function App() {
+import Home from './views/Home'
+import Contact from './views/Contact'
+
+
+const App = () => {
   return (
-    <div className="wrapper">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+  </BrowserRouter>
+  )
 }
 
 export default App;

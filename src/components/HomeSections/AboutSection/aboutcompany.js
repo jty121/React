@@ -1,7 +1,7 @@
 import './aboutcompany.css'
 import React from 'react'
 
-import img_aboutcompany from '../../../../assets/images/aboutcompany.png'
+import img_aboutcompany from '../../../assets/images/aboutcompany.png'
 
 const aboutcompany = () => {
   return (

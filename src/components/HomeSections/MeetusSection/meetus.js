@@ -1,11 +1,11 @@
 import './meetus.css'
 import React from 'react'
 
-import img_palmer from '../../../../assets/images/kristinepalmer.jpg'
-import img_aubri from '../../../../assets/images/markaubri.jpg'
-import img_hansen from '../../../../assets/images/kimberlyhansen.jpg'
-import img_willoman from '../../../../assets/images/justinwilloman.jpg'
-import img_dots from '../../../../assets/images/dot.png'
+import img_palmer from '../../../assets/images/kristinepalmer.jpg'
+import img_aubri from '../../../assets/images/markaubri.jpg'
+import img_hansen from '../../../assets/images/kimberlyhansen.jpg'
+import img_willoman from '../../../assets/images/justinwilloman.jpg'
+import img_dots from '../../../assets/images/dot.png'
 
 const meetus = () => {
   return (
