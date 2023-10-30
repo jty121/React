@@ -1,0 +1,40 @@
+.send-message .container {
+    background-color: #F0EFE9;
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+  }
+  .send-message .container .content .style-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-message .container .users {
+    display: block;
+    padding: 0 60px;
+  }
+  .send-message .container .users .name {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  .send-message .container .users .email {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  .send-message .container .users .message textarea {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 300px;
+  }
+  .send-message .container .users .button {
+    margin-top: 30px;
+  }
+  .send-message .container .users .button a {
+    display: block;
+  }

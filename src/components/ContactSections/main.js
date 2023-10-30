@@ -1,13 +1,16 @@
 import React from 'react'
 import ShowcaseContact from './ShowcaseContact.js/showcasecontact'
-import ContactUs from './ContactUs.js/contactus'
+import ContactUs from './ContactUs/contactus'
+import SendMessage from './SendMessage/sendmessage'
+import ContactMap from './ContactMap/contactmap'
 
 const main = () => {
   return (
     <main>
         <ShowcaseContact />
         <ContactUs />
-    
+        <SendMessage />
+        <ContactMap />
     </main>
   )
 }

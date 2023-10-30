@@ -34,10 +34,10 @@ const header = () => {
             </div>
             <div className="main-menu">
                 <nav>
-                    <a className="active" href="home.html">Home</a>
+                    <a className="active" href="/">Home</a>
                     <a href="service.html">Service</a>
                     <a href="news.html">News</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="/contact">Contact</a>
                 </nav>
                 <a className="btn btn-yellow">Login <i className="fa-light fa-arrow-up-right"></i></a>
             </div>

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './views/Home'
-import Contact from './views/Contact'
+import Contact from './views/Contact';
 
 
 const App = () => {
@@ -17,4 +17,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
