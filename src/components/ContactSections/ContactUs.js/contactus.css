@@ -1,0 +1,53 @@
+.info-boxes {
+    padding-top: 7.5rem;
+    padding-bottom: 5.6rem;
+  }
+  .info-boxes .container .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  @media (min-width: 992px) {
+    .info-boxes .container .boxes {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .info-boxes .container .boxes .box-location {
+    border: 2px solid #DAD9D3;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .info-boxes .container .boxes .box-location i {
+    font-size: 30px;
+    margin-right: 1rem;
+  }
+  .info-boxes .container .boxes .box-location h4 {
+    margin-bottom: 1rem;
+  }
+  .info-boxes .container .boxes .box-phone {
+    border: 2px solid #DAD9D3;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .info-boxes .container .boxes .box-phone i {
+    font-size: 30px;
+    margin-right: 1rem;
+  }
+  .info-boxes .container .boxes .box-phone h4 {
+    margin-bottom: 1rem;
+  }
+  .info-boxes .container .boxes .box-email {
+    border: 2px solid #DAD9D3;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .info-boxes .container .boxes .box-email i {
+    font-size: 30px;
+    margin-right: 1rem;
+  }
+  .info-boxes .container .boxes .box-email h4 {
+    margin-bottom: 1rem;
+  }
