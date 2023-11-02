@@ -15,24 +15,8 @@
   .articles-news .container .articles .articleboxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-  @media (min-width: 776px) {
-    .articles-news .container .articles .articleboxes{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
-    }
-  }
-  @media (min-width: 992px) {
-    .articles-news .container .articles .articleboxes{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
-    } 
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .articles-news .container .articles .box-img {

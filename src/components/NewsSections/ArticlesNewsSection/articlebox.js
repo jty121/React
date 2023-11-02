@@ -2,7 +2,7 @@ import React from 'react'
 
 const articlebox = ({ image, date, month, text, title, description }) => {
   return (
-    <>
+    <div className="content-boxes">
         <div className="box-img">
             <img src={image}/>
             <div className="box-color">
@@ -15,7 +15,7 @@ const articlebox = ({ image, date, month, text, title, description }) => {
             <h4>{title}</h4>
             <p>{description}</p>
         </div>
-    </>
+    </div>
   )
 }
 
