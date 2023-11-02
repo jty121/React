@@ -1,5 +1,6 @@
 import './footer.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import img_wavyLines from '../../assets/images/background-lines-right.svg'
 import img_logoFooter from '../../assets/images/Logofooter.svg'
@@ -52,10 +53,10 @@ const Footer = () => {
                 &copy;  2023 Crito - Consulting Company Inc. All Rights Reserved.
             </div>
             <div className="social-media">
-                <a href="http://www.facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-                <a href="http://www.twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>
-                <a href="http://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                <a href="http://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                <Link to="http://www.facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></Link>
+                <Link to="http://www.twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></Link>
+                <Link to="http://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></Link>
+                <Link to="http://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
             </div>
         </div>
     </div>    

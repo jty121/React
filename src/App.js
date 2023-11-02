@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './views/Home'
+import News from './views/News';
 import Contact from './views/Contact';
+
 
 
 const App = () => {
@@ -11,7 +13,8 @@ const App = () => {
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/contact' element={<Contact />} />
+      <Route path='/news' element={<News />} />
+      <Route path='/contact' element={<Contact />} />  
     </Routes>
   </BrowserRouter>
   )

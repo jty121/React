@@ -1,3 +1,4 @@
+import './sendmessage.css'
 import React from 'react'
 
 const sendmessage = () => {
