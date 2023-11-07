@@ -15,8 +15,8 @@
   .articles-news .container .articles .articleboxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .articles-news .container .articles .box-img {
@@ -50,11 +50,11 @@
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: bold;
-    width: 80%;
     margin-top: 1.5rem;
   }
   .articles-news .container .articles .box-info p {
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .articles-news .container .dots {
     display: flex;
