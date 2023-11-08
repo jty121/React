@@ -19,30 +19,64 @@ function SendMessageForms() {
             setErrorMessage('')
 
 
-            if (!name) {   
-                setErrorName ('Please enter a valid name')
-            } else {
-                setErrorName('')
-            }
+                //flyttat upp valideringen för email adressen, hade satt den längst ner i if-satsen
+                    const validateEmail = (email) => {
+                        if (/^[A-Za-z\s]+$/.test(email)) { 
+                            console.log('Enter a valid e-mail')
+                            return false
+                        } else {
+                            return true
+                        }  
+                    }
 
-            if (!email) {
-                setErrorEmail ('Please enter a valid E-mail')
-            } else {
-                setErrorEmail('')
-            }
+                    if (!name) {   
+                        setErrorName ('Please enter a name')
+                    } else {
+                        setErrorName('')
+                    }
 
-            if (!message) {
-                setErrorMessage ('You must type a message')
-            } else {
-                setErrorMessage('')
-            }
+                    if (!email) {
+                        setErrorEmail ('Please enter an e-mail')
+                    } else if (!validateEmail(email)){
+                        setErrorEmail ('You must enter a valid E-mail')
+                    } else {
+                        setErrorEmail('')
+                    }
 
+                    if (!message) {
+                        setErrorMessage ('Please type a message')
+                    } else {
+                        setErrorMessage('')
+                    }
+
+            if (name && email && validateEmail(email) && message) { //om användaren fyllt i alla fälten rätt
+
+                 fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+                        method: 'POST', 
+                        headers: { 'content-type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, message }),   
+                    })
+                    .then(response => {
+                        if (response.status === 200) {
+                            console.log('success')
+                            return response.text()
+                        } else {
+                            console.log('not successful' + response.status)  
+                        }
+                    })
+                    .then(data => {
+                        console.log(data)
+                    })
+                    .catch(error => {
+                        console.error('error message')
+                    })
+            }
         }
 
-
 //onChange uppdaterar värdet som användaren matat in och sparas sen in i sin tilldelade variabel
-
-  return (
+  
+return (
     <section className="send-message">
             <div className="container">
                 <div className="content">
@@ -55,17 +89,17 @@ function SendMessageForms() {
                 <div className="users">
                     <form id="registerform" method="post">
                         <div className="name">
-                            <label className="name" for="name"></label>
+                            <label className="name" htmlFor="name"></label>
                             <input className="name" type="text" name="name" title="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
                             {errorName && <p style= {{ color: 'red' }}>{errorName}</p>}
                         </div> 
                         <div className="email">
-                            <label className="email" for="email"></label>
+                            <label className="email" htmlFor="email"></label>
                             <input className="email" type="text" name="email" title="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                             {errorEmail && <p style= {{ color: 'red' }}>{errorEmail}</p>}
                         </div>
                         <div className="message">
-                            <label className="message" for="message"></label>
+                            <label className="message" htmlFor="message"></label>
                             <textarea name="message" placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                             {errorMessage && <p style= {{ color: 'red' }}>{errorMessage}</p>}
                         </div>
