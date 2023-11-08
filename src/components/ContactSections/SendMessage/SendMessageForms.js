@@ -19,13 +19,13 @@ function SendMessageForms() {
             setErrorMessage('')
 
 
-                //flyttat upp valideringen för email adressen, hade satt den längst ner i if-satsen
+                //flyttat upp valideringen för email adressen
                     const validateEmail = (email) => {
-                        if (/^[A-Za-z\s]+$/.test(email)) { 
+                        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) { 
                             console.log('Enter a valid e-mail')
-                            return false
-                        } else {
                             return true
+                        } else {
+                            return false
                         }  
                     }
 
@@ -60,6 +60,7 @@ function SendMessageForms() {
                     .then(response => {
                         if (response.status === 200) {
                             console.log('success')
+                            alert ('message sent')
                             return response.text()
                         } else {
                             console.log('not successful' + response.status)  
@@ -67,9 +68,6 @@ function SendMessageForms() {
                     })
                     .then(data => {
                         console.log(data)
-                    })
-                    .catch(error => {
-                        console.error('error message')
                     })
             }
         }
