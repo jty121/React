@@ -12,42 +12,16 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-  .info-boxes .container .boxes .box-location {
+  .info-boxes .container .boxes .box {
     border: 2px solid #DAD9D3;
     display: flex;
     justify-content: center;
     padding: 3rem;
   }
-  .info-boxes .container .boxes .box-location i {
+  .info-boxes .container .boxes .box i {
     font-size: 30px;
     margin-right: 1rem;
   }
-  .info-boxes .container .boxes .box-location h4 {
-    margin-bottom: 1rem;
-  }
-  .info-boxes .container .boxes .box-phone {
-    border: 2px solid #DAD9D3;
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-  }
-  .info-boxes .container .boxes .box-phone i {
-    font-size: 30px;
-    margin-right: 1rem;
-  }
-  .info-boxes .container .boxes .box-phone h4 {
-    margin-bottom: 1rem;
-  }
-  .info-boxes .container .boxes .box-email {
-    border: 2px solid #DAD9D3;
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-  }
-  .info-boxes .container .boxes .box-email i {
-    font-size: 30px;
-    margin-right: 1rem;
-  }
-  .info-boxes .container .boxes .box-email h4 {
+  .info-boxes .container .boxes .box h4 {
     margin-bottom: 1rem;
   }

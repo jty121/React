@@ -4,7 +4,6 @@ import Main from '../components/HomeSections/main'
 import Footer from '../components/Footer/footer'
 
 
-
 const Home = () => {
   return (
     <div>
