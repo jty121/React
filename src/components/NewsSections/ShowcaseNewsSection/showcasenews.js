@@ -6,7 +6,7 @@ import img_wavyLines from '../../../assets/images/background-lines.svg'
 const showcasenews = () => {
   return (
     <section className="news-articles">
-    <img className="wavy-lines" src={img_wavyLines} alt="wavy lines to the left" />
+    <img className="wavy-lines" src={img_wavyLines} alt="" />
     <div className="container">
         <div className="home-news">
             <span>Home</span>

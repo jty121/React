@@ -35,7 +35,15 @@
   }
   .send-message .container .users .button {
     margin-top: 30px;
+    display: grid;
+
   }
-  .send-message .container .users .button a {
-    display: block;
+  .send-message .container .users p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
   }

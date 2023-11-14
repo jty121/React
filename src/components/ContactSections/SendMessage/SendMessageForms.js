@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './SendMessageForms.css'
 import React, { useState } from 'react'
 
@@ -9,6 +10,7 @@ function SendMessageForms() {
         const [errorEmail, setErrorEmail] = useState('')
         const [message, setMessage] = useState('')
         const [errorMessage, setErrorMessage] = useState('')
+        const [sendMessage, setSendMessage] = useState(false)
 
 
         const handleSubmit = (e) => {
@@ -19,7 +21,7 @@ function SendMessageForms() {
             setErrorMessage('')
 
 
-                //flyttat upp valideringen för email adressen
+                
                     const validateEmail = (email) => {
                         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) { 
                             console.log('Enter a valid e-mail')
@@ -60,15 +62,18 @@ function SendMessageForms() {
                     .then(response => {
                         if (response.status === 200) {
                             console.log('success')
-                            alert ('message sent')
+                            setSendMessage(true)
                             return response.text()
                         } else {
-                            console.log('not successful' + response.status)  
+                            console.error('something went wrong' + response.status)  
                         }
                     })
                     .then(data => {
                         console.log(data)
                     })
+                    
+                    
+
             }
         }
 
@@ -102,8 +107,9 @@ return (
                             {errorMessage && <p style= {{ color: 'red' }}>{errorMessage}</p>}
                         </div>
                         <div className="button">
-                            <a className="btn btn-yellow" type="submit" onClick={handleSubmit}>Send Message <i className="fa-light fa-arrow-up-right"></i></a>
+                            <button className="btn btn-yellow" type="submit" onClick={handleSubmit}>Send Message <i className="fa-light fa-arrow-up-right"></i></button>
                         </div>
+                        {sendMessage && <p>Your message has been sent! </p>}
                     </form>
                 </div>
             </div>

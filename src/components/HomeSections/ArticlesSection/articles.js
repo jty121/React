@@ -5,6 +5,7 @@ import img_classroom from '../../../assets/images/classroomimg.png'
 import img_implement from '../../../assets/images/implementimg.png'
 import img_cssdesign from '../../../assets/images/cssdesignimg.png'
 import img_dots from '../../../assets/images/dot.png'
+import { Link } from 'react-router-dom'
 
 const articles = () => {
   return (
@@ -13,13 +14,13 @@ const articles = () => {
             <div className="content-header">
                 <h2>Get Every Single Articles & News</h2>
                 <div className="btn-articles">
-                    <a className="btn btn-transparent">Browse Articles <i className="fa-light fa-arrow-up-right"></i></a>
+                    <Link to="/Browse articles" className="btn btn-transparent">Browse Articles <i className="fa-light fa-arrow-up-right"></i></Link>
                 </div>
             </div>
             <div className="articles">
                 <article>
                         <div className="box-img">
-                            <img src={img_classroom} alt="picture of a woman in a classroom" />
+                            <img src={img_classroom} alt="woman in a classroom" />
                             <div className="box-color">
                                 <span>25</span>
                                 <p>Mar</p>    
@@ -34,7 +35,7 @@ const articles = () => {
                 </article>
                 <article>
                         <div className="box-img">
-                            <img src={img_implement} alt="picture of text on a computerscreen" />
+                            <img src={img_implement} alt="text on a computerscreen" />
                             <div className="box-color">
                                 <span>17</span>
                                 <p>Mar</p>    
@@ -49,7 +50,7 @@ const articles = () => {
                 </article>
                 <article>
                         <div className="box-img">
-                            <img src={img_cssdesign} alt="picture of a mobile phone and two books on a table" />
+                            <img src={img_cssdesign} alt="mobile phone and two books on a table" />
                             <div className="box-color">
                                 <span>13</span>
                                 <p>Mar</p>    

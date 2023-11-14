@@ -1,11 +1,15 @@
 import './meetus.css'
+import MeetusBox from './meetusbox'
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 import img_palmer from '../../../assets/images/kristinepalmer.jpg'
 import img_aubri from '../../../assets/images/markaubri.jpg'
 import img_hansen from '../../../assets/images/kimberlyhansen.jpg'
 import img_willoman from '../../../assets/images/justinwilloman.jpg'
 import img_dots from '../../../assets/images/dot.png'
+
 
 const meetus = () => {
   return (
@@ -18,38 +22,30 @@ const meetus = () => {
                         <h2>Experience Team Members</h2>
                     </div>
                     <div className="btn-browse">
-                        <a className="btn btn-yellow">Browse Team <i className="fa-light fa-arrow-up-right"></i></a>
+                        <Link to="/Browse team" className="btn btn-yellow">Browse Team <i className="fa-light fa-arrow-up-right"></i></Link>
                     </div>
                 </div>
                 <div className="members">
-                    <div className="info-box">
-                        <img src={img_palmer} alt="photo of Krisitne Palmer, chef operation officer" />
-                        <div className="style-h4">
-                            <h4>Kristine Palmer</h4>
-                        </div>
-                        <p>Chef Operation Officer</p>
-                    </div>
-                    <div className="info-box">
-                        <img src={img_aubri} alt="photo of Mark Aubri, senior consultant" />
-                        <div className="style-h4">
-                            <h4>Mark Aubri</h4>
-                        </div>
-                        <p>Senior Consultant</p>
-                    </div>
-                    <div className="info-box">
-                        <img src={img_hansen} alt="photo of Kimberly Hansen, senior consultant" />
-                        <div className="style-h4">
-                            <h4>Kimberly Hansen</h4>
-                        </div>
-                        <p>Senior Consultant</p>
-                    </div>
-                    <div className="info-box">
-                        <img src={img_willoman} alt="photot of Justin Willoman, senior tech consultant" />
-                            <div className="style-h4">
-                        <h4>Justin Willoman</h4>
-                        </div>
-                        <p>Senior Tech Consultant</p>
-                    </div>
+                    <MeetusBox 
+                        image={img_palmer} alt="Krisitne Palmer, chef operation officer"
+                        title="Kristine Palmer"
+                        description="Chef Operation Officer"
+                    />
+                     <MeetusBox 
+                        image={img_aubri} alt="Mark Aubri, senior consultant"
+                        title="Mark Aubri"
+                        description="Senior Consultant"
+                    />
+                     <MeetusBox 
+                        image={img_hansen} alt="Kimberly Hansen, senior consultant"
+                        title="Kimberly Hansen"
+                        description="Senior Consultant"
+                    />
+                     <MeetusBox 
+                        image={img_willoman} alt="Justin Willoman, senior tech consultant"
+                        title="Justin Willoman"
+                        description="Senior Tech Consultant"
+                    />
                 </div>
             </div>
             <div className="dots">

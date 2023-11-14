@@ -14,7 +14,7 @@ const signupnews = () => {
             </div>
             <form>
                 <input type="text" placeholder="username@domain.com" />
-                <Link className="btn btn-yellow">Subscribe <i className="fa-light fa-arrow-up-right"></i></Link>
+                <Link to="/Subscribe" className="btn btn-yellow">Subscribe <i className="fa-light fa-arrow-up-right"></i></Link>
             </form>
         </div>
     </section>

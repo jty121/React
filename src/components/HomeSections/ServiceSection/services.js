@@ -3,6 +3,7 @@ import React from 'react'
 
 import img_wavylines from '../../../assets/images/background-lines-right.svg'
 import ServiceBox from './ServiceBox'
+import { Link } from 'react-router-dom'
 
 const services = () => {
   return (
@@ -20,7 +21,7 @@ const services = () => {
                 <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/services/risk-management" />
             </div>
             <div className="btn-browse">
-                <a className="btn btn-transparent">Browse Services <i className="fa-light fa-arrow-up-right"></i></a>
+                <Link className="btn btn-transparent">Browse Services <i className="fa-light fa-arrow-up-right"></i></Link>
             </div>
         </div>
     </section>
