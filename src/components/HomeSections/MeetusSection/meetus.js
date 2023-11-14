@@ -4,6 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 import img_palmer from '../../../assets/images/kristinepalmer.jpg'
 import img_aubri from '../../../assets/images/markaubri.jpg'
 import img_hansen from '../../../assets/images/kimberlyhansen.jpg'

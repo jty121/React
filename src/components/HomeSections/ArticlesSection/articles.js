@@ -1,11 +1,15 @@
 import './articles.css'
+import ReusableArticleBox from './ReusableArticleBox'
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 
 import img_classroom from '../../../assets/images/classroomimg.png'
 import img_implement from '../../../assets/images/implementimg.png'
 import img_cssdesign from '../../../assets/images/cssdesignimg.png'
 import img_dots from '../../../assets/images/dot.png'
-import { Link } from 'react-router-dom'
+
 
 const articles = () => {
   return (
@@ -18,51 +22,33 @@ const articles = () => {
                 </div>
             </div>
             <div className="articles">
-                <article>
-                        <div className="box-img">
-                            <img src={img_classroom} alt="woman in a classroom" />
-                            <div className="box-color">
-                                <span>25</span>
-                                <p>Mar</p>    
-                            </div>
-                        </div>
-                        <div className="box-info">
-                            <span>Business</span>
-                            <h4>How To Use Digitalization 
-                                In The Classroom</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                        </div>
-                </article>
-                <article>
-                        <div className="box-img">
-                            <img src={img_implement} alt="text on a computerscreen" />
-                            <div className="box-color">
-                                <span>17</span>
-                                <p>Mar</p>    
-                            </div>
-                        </div>
-                        <div className="box-info">
-                            <span>Business</span>
-                            <h4>How To Implement Chat GPT
-                                In Your Projects</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                        </div>
-                </article>
-                <article>
-                        <div className="box-img">
-                            <img src={img_cssdesign} alt="mobile phone and two books on a table" />
-                            <div className="box-color">
-                                <span>13</span>
-                                <p>Mar</p>    
-                            </div>
-                        </div>
-                        <div className="box-info">
-                            <span>Business</span>
-                            <h4>The Guide To Support 
-                                Modern CSS Design</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                        </div>
-                </article>
+                <ReusableArticleBox 
+                    image={img_classroom} alt="woman in a classroom" 
+                    date="25"
+                    month="Mar"
+                    text="Business"
+                    title="How To Use Digitalization 
+                    In The Classroom"
+                    description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."
+                />
+                <ReusableArticleBox 
+                    image={img_implement} alt="text on a computerscreen" 
+                    date="17"
+                    month="Mar"
+                    text="Business"
+                    title="How To Implement Chat GPT
+                    In Your Projects"
+                    description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."
+                />
+                <ReusableArticleBox 
+                    image={img_cssdesign} alt="mobile phone and two books on a table" 
+                    date="13"
+                    month="Mar"
+                    text="Business"
+                    title="The Guide To Support 
+                    Modern CSS Design"
+                    description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."
+                />
             </div>
             <div className="dots">
                 <img src={img_dots} alt="dots" />
