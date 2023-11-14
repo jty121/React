@@ -1,4 +1,5 @@
 import './project.css'
+import ReusableProjectBox from './ReusableProjectBox'
 import React from 'react'
 
 import img_business from '../../../assets/images/growbusiness.png'
@@ -16,42 +17,26 @@ const project = () => {
                 <h2>Let’s Looks Our Global Projects</h2>
             </div>
             <div className="project-cases">
-                <article>
-                    <img src={img_business} alt="a piece of business magazine" />
-                    <div className="style-h4">
-                        <h4>Grow your business</h4>
-                    </div>
-                    <div className="button-read">
-                        <Link to="/Read more">Read More <i className="fa-light fa-arrow-up-right"></i></Link>
-                    </div>
-                </article>
-                <article>
-                    <img src={img_responsive} alt="pink Apple products on a desk" />
-                    <div className="style-h4">
-                        <h4>Why your client needs a responsive website</h4>
-                    </div>
-                    <div className="button-read">
-                        <Link to="/Read more">Read More <i className="fa-light fa-arrow-up-right"></i></Link>
-                    </div>
-                </article>
-                <article>
-                    <img src={img_educate} alt="office supplies" />
-                    <div className="style-h4">
-                        <h4>Educate your employees to get better results</h4>
-                    </div> 
-                    <div className="button-read">   
-                        <Link to="/Read more">Read More <i className="fa-light fa-arrow-up-right"></i></Link>
-                    </div>
-                </article>
-                <article>
-                    <img src={img_businessinsight} alt="laptop on a desk" />
-                    <div className="style-h4">
-                        <h4>Business Insights is a important piece of your business</h4>
-                    </div>
-                    <div className="button-read">
-                        <Link to="/Read more">Read More <i className="fa-light fa-arrow-up-right"></i></Link>
-                    </div>
-                </article>
+                <ReusableProjectBox 
+                    image={img_business} alt="a piece of business magazine"
+                    title="Grow your business"
+                    url="/Read more"
+                />
+                <ReusableProjectBox 
+                    image={img_responsive} alt="pink Apple products on a desk"
+                    title="Why your client needs a responsive website"
+                    url="/Read more"
+                />
+                <ReusableProjectBox 
+                    image={img_educate} alt="office supplies"
+                    title="Educate your employees to get better results"
+                    url="/Read more"
+                />
+                <ReusableProjectBox 
+                    image={img_businessinsight} alt="laptop on a desk"
+                    title="Business Insights is a important piece of your business"
+                    url="/Read more"
+                />
             </div>
             <div className="btn-recent-projects">
                 <Link className="btn btn-black">All Recent Projects <i className="fa-light fa-arrow-up-right"></i></Link>
