@@ -21,7 +21,10 @@
     justify-content: center;
     text-align: center;
   }
-  .news-articles .container .home-news span {
+  .news-articles .container .home-news .home {
     margin-right: 8px;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

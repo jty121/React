@@ -9,8 +9,8 @@ const showcasenews = () => {
     <img className="wavy-lines" src={img_wavyLines} alt="" />
     <div className="container">
         <div className="home-news">
-            <span>Home</span>
-            <p>News</p>
+            <span className="home">Home</span>
+            <p className="news">News</p>
         </div>
         <h2>
             News & Articles

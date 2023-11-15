@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
 function ArticleBox () {
 
     const [articles, setArticles] = useState([])
+
+    useEffect(() => {
+      getArticles()
+
+    }, [])
+
 
     const getArticles = async () => {
       const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
@@ -25,7 +31,6 @@ function ArticleBox () {
             </div>
           ))
         }
-        <button onClick={getArticles}>provar att hämta</button>
     </div>
   )
 }
