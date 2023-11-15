@@ -36,7 +36,7 @@ const header = () => {
             <div className="main-menu">
                 <nav>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="service.html">Service</NavLink>
+                    <NavLink to="/service">Service</NavLink>
                     <NavLink to="/news">News</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                 </nav>

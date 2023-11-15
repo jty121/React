@@ -7,6 +7,7 @@ import Home from './views/Home';
 import News from './views/News';
 import Contact from './views/Contact';
 import NewsDetails from './views/NewsDetails';
+import PageNotFound from './views/PageNotFound';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/news' element={<News />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/newsdetails' element={<NewsDetails />} /> 
+      <Route path='*' element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>
   )

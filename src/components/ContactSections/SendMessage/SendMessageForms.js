@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import './SendMessageForms.css'
 import React, { useState } from 'react'
+
 
 function SendMessageForms() {
 
@@ -16,12 +16,6 @@ function SendMessageForms() {
         const handleSubmit = (e) => {
             e.preventDefault()
 
-            setErrorName('')       //rensar felmeddelande när användaren skrivit rätt i fälten.
-            setErrorEmail('')
-            setErrorMessage('')
-
-
-                
                     const validateEmail = (email) => {
                         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) { 
                             console.log('Enter a valid e-mail')
@@ -64,15 +58,21 @@ function SendMessageForms() {
                             console.log('success')
                             setSendMessage(true)
                             return response.text()
-                        } else {
-                            console.error('something went wrong' + response.status)  
+                        } 
+                        else {
+                            console.error('bad request' + response.status)  //om statuskod inte är i 200-serien ska den här köras.
                         }
                     })
                     .then(data => {
                         console.log(data)
                     })
-                    
-                    
+                    .catch(error => {
+                        console.error('Something went wrong', error)    //här fångar man upp alla eventuella fel
+                    })
+                   
+                setErrorName('')       //rensar felmeddelande när användaren skrivit rätt i fälten.
+                setErrorEmail('')
+                setErrorMessage('')       
 
             }
         }

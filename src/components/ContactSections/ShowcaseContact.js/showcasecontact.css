@@ -21,7 +21,10 @@
     justify-content: center;
     text-align: center;
   }
-  .connect .container .home-contact span {
+  .connect .container .home-contact .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 8px;
     font-weight: 300;
   }

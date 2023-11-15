@@ -1,6 +1,7 @@
 import './showcasecontact.css'
 import React from 'react'
 
+
 import img_wavyLines from '../../../assets/images/background-lines.svg'
 
 const showcasecontact = () => {
@@ -9,8 +10,8 @@ const showcasecontact = () => {
             <img className="wavy-lines" src={img_wavyLines} alt="" />
             <div className="container">
                 <div className="home-contact">
-                    <span>Home</span>
-                    <p>Contact</p>
+                    <span className="home">Home</span>
+                    <p className="contact">Contact</p>
                 </div>
                 <h2>
                     Let’s Connect
