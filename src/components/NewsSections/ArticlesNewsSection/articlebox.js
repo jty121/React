@@ -1,22 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const articlebox = ({ image, date, month, text, title, description }) => {
+
+
+function ArticleBox () {
+
+    const [articles, setArticles] = useState([])
+
+    const getArticles = async () => {
+      const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles')
+      setArticles(await result.json())
+    }
+
+
+
   return (
     <div className="content-boxes">
-        <div className="box-img">
-            <img src={image}/>
-            <div className="box-color">
-                    <span>{date}</span>
-                    <p>{month}</p>    
+        {
+          articles.map(article => (
+            <div key={article.id}>
+                <img className="img" src={article.imageUrl}/>  
+                <p>{article.category}</p>    
+                <h4>{article.title}</h4>
+                <span>{article.content}</span>
             </div>
-        </div>
-        <div className="box-info">
-            <span>{text}</span>
-            <h4>{title}</h4>
-            <p>{description}</p>
-        </div>
+          ))
+        }
+        <button onClick={getArticles}>provar att hämta</button>
     </div>
   )
 }
 
-export default articlebox
+export default ArticleBox

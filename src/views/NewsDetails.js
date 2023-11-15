@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const NewsDetails = () => {
   return (
     <div>NewsDetails</div>

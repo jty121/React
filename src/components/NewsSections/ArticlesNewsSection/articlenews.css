@@ -12,50 +12,32 @@
     margin-bottom: 2.5rem;
   }
 
-  .articles-news .container .articles .articleboxes {
+  .articles-news .container .content-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 3rem;
   }
 
-  .articles-news .container .articles .box-img {
+ .img {
     width: 100%;
-    position: relative;
+    max-height: 250px;
+    object-fit: cover;
+    margin-top: 50px;
   }
-  .articles-news .container .articles .box-img .box {
-    display: inline-block;
-    padding: 1rem;
-    padding-bottom: 0.2rem;
-    background-color: #F0D082;
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-  }
-  .articles-news .container .articles .box-img .box-color span {
-    text-align: center;
-    font-family: "DM Sans", sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-  }
-  .articles-news .container .articles .box-img .box-color p {
-    text-align: center;
-    margin: 0;
-    margin-top: -0.5rem;
-  }
-  .articles-news .container .articles .box-info {
-    margin-top: 1.5rem;
-  }
-  .articles-news .container .articles .box-info h4 {
+ 
+  h4 {
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: bold;
     margin-top: 1.5rem;
   }
-  .articles-news .container .articles .box-info p {
+
+  p {
     margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+    margin-bottom: 1rem;
+  } 
+
+
   .articles-news .container .dots {
     display: flex;
     justify-content: center;
