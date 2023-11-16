@@ -1,0 +1,155 @@
+.news {
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+  .news .container .news-title h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .news .container .news-title .title-text {
+    display: flex;
+    align-items: baseline;
+    padding: 20px 0px;
+    gap: 2rem;
+  }
+  .news .container .boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .news .container .boxes .box {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .news .container .boxes .box .text-content {
+    padding-top: 30px;
+  }
+  .news .container .boxes .box .text-content p {
+    margin-top: 40px;
+  }
+  .news .container .search-articles .search-box {
+    position: relative;
+  }
+  .news .container .search-articles .search-box img {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #191919;
+  }
+  .news .container .search-articles input {
+    background-color: #F0EFE9;
+    padding: 12px 30px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  @media (min-width: 776px) {
+    .news .container .search-articles input {
+      margin-right: 1rem;
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 992px) {
+    .news .container .search-articles input {
+      margin-right: 1rem;
+      margin-bottom: 10px;
+    }
+  }
+  .news .container .search-articles input:hover {
+    border: 1px solid #191919;
+  }
+  .news .container .search-articles .content {
+    border: 1px solid #F0EFE9;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .news .container .search-articles .content .content-box {
+    border-bottom: 1px solid #F0EFE9;
+    margin-bottom: 20px;
+  }
+  .news .container .search-articles .content .content-box h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .news .container .search-articles .content .content-box h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .news .container .search-articles .content .content-box p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #191919;
+  }
+  .news .container .search-articles .content .content-box-last h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .news .container .search-articles .content .content-box-last p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #191919;
+  }
+  .news .container .search-articles .categories {
+    border: 1px solid #F0EFE9;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .news .container .search-articles .categories h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .news .container .search-articles .categories .categories-posts h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .news .container .search-articles .categories .categories-posts .posts-box {
+    display: flex;
+  }
+  .news .container .search-articles .categories .categories-posts .posts-box h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .news .container .search-articles .categories .categories-posts .posts-box p {
+    margin: 0 0 8px;
+  }
+  .news .container .quote-text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 30px 0 30px;
+    width: 60%;
+  }
+  .news .container .quote-text img {
+    margin-right: 20px;
+  }
+  .news .container .text {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  .news .container .btn-articles button {
+    background-color: #F0EFE9;
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+    padding: 8px 25px;
+  }
+  .news .container .btn-articles button:hover {
+    background-color: #191919;
+    color: #f8f8f8;
+    transition: ease-in-out 0.2s;
+  }
