@@ -1,7 +1,7 @@
-import './ShowcaseArticle.css'
-import React from 'react'
+import './ShowcaseArticle.css';
+import React from 'react';
 
-import img_wavyLines from '../../../assets/images/background-lines.svg'
+import img_wavyLines from '../../../assets/images/background-lines.svg';
 
 const ShowcaseArticle = () => {
   return (

@@ -22,7 +22,10 @@ function ArticleBox () {
       }
 
       const publishDate = (dateString) => {
-        return dateString.split('T')[0]   //delat strängen vid T för att få bort klockslaget
+        if (dateString) {
+          return dateString.split('T')[0]  //delat strängen vid T för att ta bort klockslaget
+          }
+          return '';
       }
 
 

@@ -1,19 +1,19 @@
-import './ArticleNews.css'
-import { Link } from 'react-router-dom'
-import React from 'react'
-import ReusableArticleBox from '../../HomeSections/ArticlesSection/ReusableArticleBox'
+import './ArticleNews.css';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import ReusableArticleBox from '../../HomeSections/ArticlesSection/ReusableArticleBox';
 
 
-import img_classroom from '../../../assets/images/classroomimg.png'
-import img_implement from '../../../assets/images/implementimg.png'
-import img_cssdesign from '../../../assets/images/cssdesignimg.png'
-import img_dots from '../../../assets/images/dot.png'
+import img_classroom from '../../../assets/images/classroomimg.png';
+import img_implement from '../../../assets/images/implementimg.png';
+import img_cssdesign from '../../../assets/images/cssdesignimg.png';
+import img_dots from '../../../assets/images/dot.png';
 
 
 const ArticleNews = () => {
   return (
     <div>
-       <section className="articles-news">
+       <section className="articles-news-content">
         <div className="container">
             <div className="content-header">
                 <h2>Get Every Single Articles & News</h2>

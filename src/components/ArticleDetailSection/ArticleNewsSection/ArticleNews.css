@@ -1,24 +1,25 @@
-.articles-news {
+.articles-news-content {
     padding-top: 5.6rem;
+    background-color: #F0EFE9;
   }
-  .articles-news .container .content-header {
+  .articles-news-content .container .content-header {
     display: flex;
     justify-content: space-between;
   }
-  .articles-news .container .content-header h2 {
+  .articles-news-content .container .content-header h2 {
     font-family: "DM Sans", sans-serif;
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 2.5rem;
   }
-  .articles-news .container .articles {
+  .articles-news-content .container .articles {
     display: grid;
     grid-template-columns: 1fr;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
   @media (min-width: 776px) {
-    .articles-news .container .articles {
+    .articles-news-content .container .articles {
       display: grid;
       grid-template-columns: 1fr 1fr;
       -moz-column-gap: 2rem;
@@ -26,18 +27,18 @@
     }
   }
   @media (min-width: 992px) {
-    .articles-news .container .articles {
+    .articles-news-content .container .articles {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       -moz-column-gap: 2rem;
            column-gap: 2rem;
     }
   }
-  .articles-news .container .articles .box-img {
+  .articles-news-content .container .articles .box-img {
     width: 100%;
     position: relative;
   }
-  .articles-news .container .articles .box-img .box-color {
+  .articles-news-content .container .articles .box-img .box-color {
     display: inline-block;
     padding: 1rem;
     padding-bottom: 0.2rem;
@@ -46,31 +47,31 @@
     left: 1rem;
     top: 1rem;
   }
-  .articles-news .container .articles .box-img .box-color span {
+  .articles-news-content .container .articles .box-img .box-color span {
     text-align: center;
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: bold;
   }
-  .articles-news .container .articles .box-img .box-color p {
+  .articles-news-content .container .articles .box-img .box-color p {
     text-align: center;
     margin: 0;
     margin-top: -0.5rem;
   }
-  .articles-news .container .articles .box-info {
+  .articles-news-content .container .articles .box-info {
     margin-top: 1.5rem;
   }
-  .articles-news .container .articles .box-info h4 {
+  .articles-news-content .container .articles .box-info h4 {
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: bold;
     width: 80%;
     margin-top: 1.5rem;
   }
-  .articles-news .container .articles .box-info p {
+  .articles-news-content .container .articles .box-info p {
     margin-top: 1rem;
   }
-  .articles-news .container .dots {
+  .articles-news-content .container .dots {
     display: flex;
     justify-content: center;
     align-items: center;
