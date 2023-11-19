@@ -1,8 +1,10 @@
-import './signupnews.css'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import './signupnews.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_wavylines from '../../../assets/images/background-wavy-lines.svg'
+
+import img_wavylines from '../../../assets/images/background-wavy-lines.svg';
+
 
 const signupnews = () => {
   return (

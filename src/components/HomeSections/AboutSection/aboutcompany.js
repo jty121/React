@@ -1,10 +1,12 @@
-import './aboutcompany.css'
-import React from 'react'
+import './aboutcompany.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_aboutcompany from '../../../assets/images/aboutcompany.png'
-import { Link } from 'react-router-dom'
+import img_aboutcompany from '../../../assets/images/aboutcompany.png';
+
 
 const aboutcompany = () => {
+    
   return (
         <section className="about-company">
             <div className="container">

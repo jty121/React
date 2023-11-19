@@ -1,10 +1,11 @@
-import './articlenews.css'
-import React from 'react'
-import { Link } from 'react-router-dom'
-import ArticleBox from './articlebox'
+import './articlenews.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ArticleBox from './articlebox';
 
 
-import img_dots from '../../../assets/images/dot.png'
+import img_dots from '../../../assets/images/dot.png';
+
 
 const ArticleNews = () => {
   return (

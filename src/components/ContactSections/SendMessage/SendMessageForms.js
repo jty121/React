@@ -1,5 +1,5 @@
-import './SendMessageForms.css'
-import React, { useState } from 'react'
+import './SendMessageForms.css';
+import React, { useState } from 'react';
 
 
 function SendMessageForms() {
@@ -15,7 +15,7 @@ function SendMessageForms() {
 
         const handleSubmit = (e) => {
             e.preventDefault()
-
+ 
                     const validateEmail = (email) => {
                         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) { 
                             console.log('Enter a valid e-mail')
@@ -25,19 +25,33 @@ function SendMessageForms() {
                         }  
                     }
 
+                    const validateName = (name) => {
+                        if (/^[A-Za-z\s]+$/.test(name)) {
+                            console.log('Enter a valid name')
+                            return true
+                        } else {
+                            return false
+                        }
+                    }
+
+
                     if (!name) {   
                         setErrorName ('Please enter a name')
+                    } else if (!validateName(name)) {
+                        setErrorName ('You must enter a valid name')
                     } else {
                         setErrorName('')
                     }
 
+
                     if (!email) {
                         setErrorEmail ('Please enter an e-mail')
-                    } else if (!validateEmail(email)){
+                    } else if (!validateEmail(email)) {
                         setErrorEmail ('You must enter a valid E-mail')
                     } else {
                         setErrorEmail('')
                     }
+
 
                     if (!message) {
                         setErrorMessage ('Please type a message')
@@ -45,7 +59,7 @@ function SendMessageForms() {
                         setErrorMessage('')
                     }
 
-            if (name && email && validateEmail(email) && message) { //om användaren fyllt i alla fälten rätt
+            if (name && validateName(name) && email && validateEmail(email) && message) { //om användaren fyllt i alla fälten rätt
 
                  fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
                         method: 'POST', 
@@ -69,11 +83,10 @@ function SendMessageForms() {
                     .catch(error => {
                         console.error('Something went wrong', error)    //här fångar man upp alla eventuella fel
                     })
-                   
+                    
                 setErrorName('')       //rensar felmeddelande när användaren skrivit rätt i fälten.
                 setErrorEmail('')
-                setErrorMessage('')       
-
+                setErrorMessage('') 
             }
         }
 

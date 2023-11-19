@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+
 
 const ReusableArticleBox = ({image, date, month, text, title, description}) => {
+
   return (
     <article>
         <div className="box-img">

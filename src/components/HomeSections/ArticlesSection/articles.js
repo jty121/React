@@ -1,17 +1,18 @@
-import './articles.css'
-import ReusableArticleBox from './ReusableArticleBox'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import './articles.css';
+import ReusableArticleBox from './ReusableArticleBox';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
-import img_classroom from '../../../assets/images/classroomimg.png'
-import img_implement from '../../../assets/images/implementimg.png'
-import img_cssdesign from '../../../assets/images/cssdesignimg.png'
-import img_dots from '../../../assets/images/dot.png'
+import img_classroom from '../../../assets/images/classroomimg.png';
+import img_implement from '../../../assets/images/implementimg.png';
+import img_cssdesign from '../../../assets/images/cssdesignimg.png';
+import img_dots from '../../../assets/images/dot.png';
 
 
 const articles = () => {
+    
   return (
     <section className="articles-news">
         <div className="container">

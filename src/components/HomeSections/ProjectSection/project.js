@@ -1,14 +1,17 @@
-import './project.css'
-import ReusableProjectBox from './ReusableProjectBox'
-import React from 'react'
+import './project.css';
+import ReusableProjectBox from './ReusableProjectBox';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_business from '../../../assets/images/growbusiness.png'
-import img_responsive from '../../../assets/images/responsivewebsite.png'
-import img_educate from '../../../assets/images/educateemployeers.png'
-import img_businessinsight from '../../../assets/images/businessinsigghts.png'
-import { Link } from 'react-router-dom'
+
+import img_business from '../../../assets/images/growbusiness.png';
+import img_responsive from '../../../assets/images/responsivewebsite.png';
+import img_educate from '../../../assets/images/educateemployeers.png';
+import img_businessinsight from '../../../assets/images/businessinsigghts.png';
+
 
 const project = () => {
+    
   return (
     <section className="project-and-case">
         <div className="container">

@@ -1,10 +1,12 @@
-import './header.css'
-import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import './header.css';
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
-import img_critologotype from '../../assets/images/logotype.svg'
+import img_critologotype from '../../assets/images/logotype.svg';
+
 
 const header = () => {
+    
   return (
     <header>
     <div className="container">

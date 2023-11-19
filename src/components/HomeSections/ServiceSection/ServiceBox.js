@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const ServiceBox = ({ title, description, url }) => {
   return (

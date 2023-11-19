@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const FeaturesBox = ({image, title, descpription}) => {
+  
   return (
     <div className="box">
         <img src={image}/>

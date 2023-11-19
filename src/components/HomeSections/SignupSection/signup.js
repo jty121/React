@@ -1,8 +1,9 @@
-import './signup.css'
-import React from 'react'
+import './signup.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_wavylines from '../../../assets/images/background-lines-right.svg'
-import { Link } from 'react-router-dom'
+
+import img_wavylines from '../../../assets/images/background-lines-right.svg';
 
 const signup = () => {
   return (

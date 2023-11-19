@@ -1,11 +1,11 @@
-import './ArticleDetails.css'
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import './ArticleDetails.css';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 
-import img_oval from '../../../assets/images/Oval.png'
-import img_quotes from '../../../assets/images/quotes.png'
-import img_zoomout from '../../../assets/images/zoom-out.png'
+import img_oval from '../../../assets/images/Oval.png';
+import img_quotes from '../../../assets/images/quotes.png';
+import img_zoomout from '../../../assets/images/zoom-out.png';
 
 const ArticleDetails = () => {
 
@@ -29,6 +29,10 @@ const ArticleDetails = () => {
             }
         }
 
+        const publishDate = (dateString) => {
+            return dateString.split('T')[0]   //delat strängen vid T för att ta bort klockslaget
+        }
+
   return (
         <div className="news">
             <div className="container">
@@ -36,7 +40,7 @@ const ArticleDetails = () => {
                         <h1>{articles.title}</h1> 
                     <div className="title-text">
                         <div>
-                            <p>{articles.published}</p>
+                            <p>{publishDate(articles.published)}</p>
                         </div>
                             <img src={img_oval} alt=""/>
                         <div>

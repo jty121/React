@@ -1,11 +1,12 @@
-import './footer.css'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import './footer.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_wavyLines from '../../assets/images/background-lines-right.svg'
-import img_logoFooter from '../../assets/images/Logofooter.svg'
+import img_wavyLines from '../../assets/images/background-lines-right.svg';
+import img_logoFooter from '../../assets/images/Logofooter.svg';
 
 const Footer = () => {
+    
   return (
     <footer className="crito-footer">
     <img className="wavy-lines-right" src={img_wavyLines} alt="wavy lines to the right" />

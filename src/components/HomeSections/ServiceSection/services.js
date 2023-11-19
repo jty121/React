@@ -1,11 +1,14 @@
-import './services.css'
-import React from 'react'
+import './services.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_wavylines from '../../../assets/images/background-lines-right.svg'
-import ServiceBox from './ServiceBox'
-import { Link } from 'react-router-dom'
+
+import img_wavylines from '../../../assets/images/background-lines-right.svg';
+import ServiceBox from './ServiceBox';
+
 
 const services = () => {
+
   return (
     <section className="our-services">
         <img className="wavy-lines-right" src={img_wavylines} alt="white lines to the right" />

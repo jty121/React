@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const MeetusBox = ({image, title, description}) => {
+  
   return (
     <div className="info-box">
         <img src={image} />

@@ -1,14 +1,14 @@
-import './testimonial.css'
-import ReusableTestimonialBox from './ReusableTestimonialBox'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import './testimonial.css';
+import ReusableTestimonialBox from './ReusableTestimonialBox';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
-import img_star from '../../../assets/images/Star.png'
-import img_cassandra from '../../../assets/images/cassandra.png'
-import img_amanda from '../../../assets/images/amanda.png'
-import img_jack from '../../../assets/images/jack.png'
+import img_star from '../../../assets/images/Star.png';
+import img_cassandra from '../../../assets/images/cassandra.png';
+import img_amanda from '../../../assets/images/amanda.png';
+import img_jack from '../../../assets/images/jack.png';
 
 
 const testimonial = () => {

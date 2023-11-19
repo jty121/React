@@ -1,8 +1,8 @@
-import './showcasecontact.css'
-import React from 'react'
+import './showcasecontact.css';
+import React from 'react';
 
 
-import img_wavyLines from '../../../assets/images/background-lines.svg'
+import img_wavyLines from '../../../assets/images/background-lines.svg';
 
 const showcasecontact = () => {
   return (

@@ -1,11 +1,14 @@
-import './showcase.css'
-import React from 'react'
+import './showcase.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import img_wavylines from '../../../assets/images/background-lines.svg'
-import img_showcase_picture from '../../../assets/images/showcase-image.svg'
-import { Link } from 'react-router-dom'
+
+import img_wavylines from '../../../assets/images/background-lines.svg';
+import img_showcase_picture from '../../../assets/images/showcase-image.svg';
+
 
 const showcase = () => {
+    
   return (
     <section className="showcase">
         <img className="wavy-lines-left" src={img_wavylines} alt="" />

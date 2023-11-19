@@ -19,11 +19,18 @@
   .news-articles .container .home-news {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    margin-bottom: 16px;
   }
   .news-articles .container .home-news .home {
     margin-right: 8px;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .news-articles .container .home-news .news {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
